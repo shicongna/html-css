@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		padding:0;
+	}
+		.box{
+			width: 200px;
+			height: 200px;
+			border:1px solid red;
+			margin:10px;
+			padding:20px;
+		}
+		span,p{
+			font-family: "微软雅黑";
+			display: block;
+			margin-top: 20px;
+		}
+		p{
+			color:red;
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="box">
+		<span>margin,padding,border使盒子变大；实际高所占位置：height+padding+border+margin
+			盒子呈现高度：height+padding+border</span>
+	</div>
+	<p>解决方案：</p>
+	<h2>1.margin padding 初始化</h2>
+	<h2>2.border-box:box-sizing不用考虑border,padding,margin所占位置,盒子大小即设定宽度与高度</h2>
+	<h2>3.clearfix解决的重合问题，即子级margin-top作用在父级上，父级overflow:hidden或者clearfix解决</h2>
+	<h1>提到clearfix就说一下清浮动：
+	子级float导致父级高度为0，在子级下写一行 div class="clear" style="clear:both"></div>
+	或者父级clearfix即可
+	</h1>
+	<h1>关于什么是盒模型:box border padding margin</h1>	
+
+</body>
+</html>

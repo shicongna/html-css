@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.icon{
+			width: 30px;
+			height: 30px;
+		}
+		.pwd{
+			border: none;
+			outline: none;
+			border:1px solid red;
+			width: 200px;
+			height: 40px;
+		}
+		.sub{
+			border:none;
+			background-color: teal;
+			width: 80px;
+			height: 30px;
+			color:#fff;
+			font-family: "微软雅黑";
+		}
+		.check{
+			width: 200px;
+			/*宽度最大30px*/
+			/*高度最大40px*/
+			height: 30px;
+			/*以下三种样式无作用*/
+			color:teal;
+			border:none;
+			background-color: #fff;
+		}
+		.rdo{
+			width: 30px;
+			height: 30px;
+			/*无作用*/
+			border:none;
+			background-color: #fff;
+			color:teal;
+		}
+		select{
+			width: 200px;
+			height: 60px;
+			border:none;
+			outline: none;
+			background-color: #f00;
+			color:blue;
+		}
+		select option{
+			/*width: 200px;*/
+			height: 30px;
+			color:#fff;
+			font-family: "微软雅黑";
+		}
+		.down{
+			display: block;
+			width: 0px;
+			height: 0px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: black transparent transparent transparent;
+			margin-top: -20px;
+			margin-left: 180px;
+		}
+		.top{
+			display: block;
+			width: 0px;
+			height: 0px;
+			border-width: 5px;
+			border-style: solid;
+			border-color:  transparent transparent black  transparent;
+			margin-top: -15px;
+			margin-left: 200px;
+		}
+		.left{
+			display: block;
+			width: 0px;
+			height: 0px;
+			border-width: 5px;
+			border-style: solid;
+			border-color:  transparent black transparent  transparent;
+			margin-top: -10px;
+			margin-left: 230px;
+		}
+		.right{
+			display: block;
+			width: 0px;
+			height: 0px;
+			border-width: 5px;
+			border-style: solid;
+			border-color:  transparent transparent  transparent black;
+			margin-top: -10px;
+			margin-left: 260px;
+		}
+	</style>
+</head>
+<body>
+	<h1>
+	详情见<a href="http://www.cnblogs.com/js-html/p/3348810.html">http://www.cnblogs.com/js-html/p/3348810.html网址</a>	
+	</h1>
+	<!-- action地址为后台的路径地址，前台提交，后台响应 -->
+	<form action="http://www.baidu.com">
+		<label for="username">用户:</label><input type="text" name="username" placeholder="用户名" id="username">
+		<input type="password" name="password" placeholder="密码" class="pwd"><hr>
+
+		<!-- 提交表单的三种类型,元素标签的默认行为 -->
+		<input type="image" src="images/1.jpg" class="icon">
+		<input type="submit" value="提交表单" class="sub">
+		<button>button按钮</button><br/><hr>
+		<label for="">
+			复选框<input type="checkbox"checked="checked">篮球
+				  <input type="checkbox" class="check" >足球
+				  <input type="checkbox">羽毛球
+		</label><hr>
+		单选框
+		<input type="radio" name="sex" checked>男
+		<input type="radio" name="sex" class="rdo">女<hr>
+		<select name="" id="">
+			<option value="">确定</option>
+			<option value="" selected="selected">取消</option>
+			<option value="">支付</option>
+		</select>
+		<textarea name="" id="" cols="25" rows="10" style="overflow:scroll">
+			hello textarea
+		</textarea>
+	<input type="reset" value="重置">
+	<input type="button" value="普通按钮">
+	</form>
+	<h1>自制小三角
+		<span class="down"></span>
+		<span class="top"></span>
+		<span class="left"></span>
+		<span class="right"></span>
+	 </h1>
+
+</body>
+</html>
