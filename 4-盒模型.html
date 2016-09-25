@@ -36,10 +36,20 @@
 	<h2>2.border-box:box-sizing不用考虑border,padding,margin所占位置,盒子大小即设定宽度与高度</h2>
 	<h2>3.clearfix解决的重合问题，即子级margin-top作用在父级上，父级overflow:hidden或者clearfix解决</h2>
 	<h1>提到clearfix就说一下清浮动：
-	子级float导致父级高度为0，在子级下写一行 div class="clear" style="clear:both"></div>
-	或者父级clearfix即可
+	子级float导致父级高度为0，
+	三种解决方案：
+	1.在子级下写一行 div class="clear" style="clear:both"></div>
+	2.或者父级clearfix即可（/*.clear:before,.clear:after{
+			content:"";
+			display: block;
+			clear:both;
+		}*/）
+	3.父级添加class="clear"(.clear{
+			overflow: hidden;
+		})
+
 	</h1>
-	<h1>关于什么是盒模型:box border padding margin</h1>	
+	<h1>关于什么是盒模型:width height  border padding margin</h1>	
 
 </body>
 </html>
